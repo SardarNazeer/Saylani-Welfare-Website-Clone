@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 
-:root{
+:root {
 
     /*===== Colors =====*/
 
@@ -19,65 +19,71 @@
     --line-color: #F7F7F7;
     --white-color: #ffffff;
 
-     /*===== Font and Typography =====*/
-     --body-font: 'Poppins', sans-serif;
+    /*===== Font and Typography =====*/
+    --body-font: 'Poppins', sans-serif;
 
-     /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-     --biggest-font-size: 3rem;
-     --h1-font-size: 2.25rem;
-     --h2-font-size: 1.5rem;
-     --h3-font-size: 1.25rem;
-     --normal-font-size: 1rem;
-     --small-font-size: .875rem;
-     --smaller-font-size: .813rem;
- 
-     /*===== Font Weight =====*/
-     --font-medium: 500;
-     --font-bold: 600;
- 
+    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+    --biggest-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /*===== Font Weight =====*/
+    --font-medium: 500;
+    --font-bold: 600;
+
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body, button, input{
+body,
+button,
+input {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
 }
 
-body{
+body {
     background-color: var(--white-color);
+    overflow-x: hidden;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
     font-weight: var(--font-bold);
 }
 
-ul{
+ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
 }
 
-button{
+button {
     cursor: pointer;
 }
 
-button,input{
+button,
+input {
     border: none;
     outline: none;
 }
@@ -85,49 +91,49 @@ button,input{
 
 /*=============== LAYOUT ===============*/
 
-.container{
+.container {
     max-width: 1250px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.grid{
+.grid {
     display: grid;
 }
 
 /*=============== HEADER ===============*/
 
-.header{
+.header {
     width: 100vw;
     height: 100vh;
     background-color: var(--white-color);
 }
 
-.header-info{
+.header-info {
     width: 100vw;
     height: 35px;
     background-color: var(--line-color);
 }
 
-.info-data{
+.info-data {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-top: 4px;
 }
 
-.info-data a{
+.info-data a {
     margin-right: 5rem;
     font-size: var(--small-font-size);
     color: var(--black-text-color);
 }
 
-.info-data i{
+.info-data i {
     margin-right: 1rem;
     font-size: var(--normal-font-size);
 }
 
-.info-data .lang{
+.info-data .lang {
     background-color: var(--white-color);
     padding: 10px;
     line-height: 10px;
@@ -135,7 +141,7 @@ button,input{
 
 /*=============== NAVBAR ===============*/
 
-.navbar{
+.navbar {
     width: 100vw;
     height: 12%;
     box-shadow: 0px 1px 1px black;
@@ -145,31 +151,31 @@ button,input{
     justify-content: space-evenly;
 }
 
-.logo-img{
+.logo-img {
     width: 200px;
     cursor: pointer;
 }
 
-.nav-links{
+.nav-links {
     display: flex;
 }
 
-.nav-link{
+.nav-link {
     padding: 5px;
     color: var(--footer-color);
     transition: .3s;
 }
 
-.active-link{
+.active-link {
     color: var(--guide-color);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--green-btn-color);
     text-decoration: underline;
 }
 
-.donate-btn{
+.donate-btn {
     padding: 10px;
     width: 130px;
     color: var(--white-color);
@@ -178,7 +184,7 @@ button,input{
     font-size: var(--small-font-size);
 }
 
-.sponser-btn{
+.sponser-btn {
     padding: 10px;
     width: 130px;
     color: var(--white-color);
@@ -187,52 +193,54 @@ button,input{
     font-size: var(--small-font-size);
 }
 
-.btn{
+.btn {
     transition: .3s;
 }
 
-.btn:hover{
+.btn:hover {
     transform: scale(1.1);
 }
 
-.header-content{
+/*=============== HEADER ===============*/
+
+.header-content {
     width: 100vw;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.header-left{
+.header-left {
     margin-top: 5rem;
     margin-left: 5rem;
 }
 
-.header-title{
+.header-title {
     width: 450px;
     font-size: var(--biggest-font-size);
     font-weight: var(--font-medium);
     color: #424242;
 }
 
-.header-title span{
+.header-title span {
     color: #8DC63F;
 }
 
-.header-subtitle{
+.header-subtitle {
     font-size: 1.4rem;
     color: #424242;
     margin-top: 1rem;
 }
 
-.header-subtitle span{
+.header-subtitle span {
     color: #1169AB;
 }
 
-.header-desc{
+.header-desc {
     color: #B5B5B5;
     margin-top: 1rem;
     margin-bottom: 2rem;
 }
 
-.header-btn{
+.header-btn {
     background-color: transparent;
     border: 1px solid var(--black-text-color);
     margin-top: 2rem;
@@ -242,12 +250,222 @@ button,input{
     border-radius: 5px;
 }
 
-.header-btn i{
+.header-btn i {
     padding-left: 5px;
     font-size: 1rem;
 }
 
-.header-right-img img{
+.header-right-img img {
     width: 450px;
     margin-top: 3rem;
+}
+
+/*=============== SECTION ===============*/
+
+.section {
+    margin: 5rem;
+    background-color: #F0FCDB;
+    width: 90%;
+    padding: 4rem;
+    padding-bottom: 6rem;
+    border-radius: 5px;
+}
+
+.general-input label {
+    background-color: #232323;
+    color: #ffffff;
+    padding: 1rem;
+}
+
+.general-input input {
+    padding: 1rem;
+    width: 10rem;
+}
+
+.section-content {
+    position: absolute;
+    left: 34%;
+    bottom: -25%;
+}
+
+.section-content a {
+    background-color: #ffffff;
+    text-decoration: none;
+    color: #232323;
+    padding: 1rem;
+    font-size: 1rem;
+    margin: 1rem;
+    transition: .4s;
+    border-radius: 5px;
+}
+
+.section-content a:hover {
+    background-color: #232323;
+    color: #ffffff;
+}
+
+.section-btn {
+    position: absolute;
+    left: 35%;
+}
+
+.section-btn .btn {
+    background-color: var(--green-btn-color);
+    color: var(--white-color);
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+}
+
+.img-section {
+    margin: 5rem;
+    margin-left: 7rem;
+}
+
+.img-section img {
+    width: 95%;
+    height: 80%;
+    border-radius: 1rem;
+}
+
+/*=============== DOING SECTION ===============*/
+
+.doing-section {
+    margin: 5rem;
+}
+
+.doing-section h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.doing-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1rem;
+}
+
+.image-doing {
+    background-color: #F0FCDB;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: .4s;
+}
+
+.image-doing:hover {
+    transform: scale(1.1);
+}
+
+.image-doing h3 {
+    font-size: 1rem;
+}
+
+/*=============== IMAGE BTN SECTION ===============*/
+
+.image-btn-section {
+    margin: 5rem;
+}
+
+.image-btn-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2rem;
+}
+
+.image-btn img {
+    border-radius: 6px;
+    filter: brightness(50%);
+}
+
+.image-btn img:hover {
+    filter: brightness(100%);
+}
+
+.image-btn h3 {
+    position: relative;
+    top: -25%;
+    left: 4%;
+    color: #ffffff;
+}
+
+.image-btn button {
+    position: relative;
+    top: -25%;
+    left: 4%;
+    color: #ffffff;
+    background-color: var(--green-btn-color);
+    padding: .70rem;
+    width: 90%;
+}
+
+/*=============== PROJECT SECTION ===============*/
+
+.project {
+    margin: 5rem;
+}
+
+.project-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+
+.project-right h1 {
+    font-size: 1.8rem;
+}
+
+.other-project {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+    margin-bottom: 1rem;
+}
+
+.other-project>div {
+    position: relative;
+    right: 75%;
+}
+
+.other-project h4 {
+    color: #1169AB;
+}
+
+.other-project p {
+    color: #B5B5B5;
+}
+
+/*=============== SCORE SECTION ===============*/
+
+.score {
+    margin: 5rem;
+    background-color: var(--sky-dark-color);
+}
+
+.score-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5rem;
+    padding: 8rem;
+    margin-left: 4rem;
+}
+
+.score-main img {
+    background-color: var(--white-color);
+    border-radius: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+.score-main h1 {
+    font-size: 2rem;
+    color: var(--white-color);
+}
+
+.score-main p {
+    color: var(--white-color);
+}
+
+.score-main span {
+    text-align: center;
 }
